@@ -1,0 +1,90 @@
+sidebar .enq-form .form-control { font-size: calc(0.75vw + 1px); padding:calc(0.4vw + 1px) calc(0.75vw + 1px); }
+sidebar textarea { display:none !important; }
+.enq-form-layout textarea { display:none !important; }
+.enq-form .form-control { font-size:14px; line-height:normal; }
+.iti .iti__selected-dial-code { font-size:12px; }
+.enq-form .form-control::placeholder{ color:#999; }
+.form-control { height:30px; }
+.amenities-block-wrapper p { font-size:18px; margin-bottom:0; font-weight:500; }
+.requestcallback { font-size:14px !important; }
+
+.developedby { margin-bottom:10px; }
+.developedby p { font-size:14px; font-weight:500; text-align:center; margin-bottom:2px; }
+.developedby img { width:100px; }
+.highlightData { display: flex; gap: 10px; }
+.highlightData p { font-size:14px; text-align:left; }
+
+.btn-cta {
+  position: relative;
+  overflow: hidden;
+  animation: none !important;
+}
+
+.btn-cta::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    left: 100%;
+  }
+}
+.bd-img::before { display:none; }
+.gallery-img img { border-radius:10px; }
+@media screen and (min-width: 1150px) and (max-width: 1950px) {
+    .glide__arrow--left {
+        font-size: calc(1.8vw + 1px);
+        left: -4%;
+    }
+}
+@media screen and (min-width: 1150px) and (max-width: 1950px) {
+    .glide__arrow--right {
+        font-size: calc(1.8vw + 1px);
+        right: -4%;
+    }
+}
+.bd-img img { border-radius:10px; }
+.bd-iframe iframe { border-radius:10px; }
+
+.main-navbar .nav-item .ls-is-cached { display:none; }
+
+@keyframes popout {
+  25%, 75% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  55% {
+    transform: scale(1.06) !important;
+  }
+}
+
+.enq-form-layout { grid-template-columns:auto; }
+.enq-popup-cp-highlights { display: none; }
+.enqPopup .modal-dialog { max-width:550px; }
+.enqPopup .modal-title { width:100% !important; text-align: center; }
+.enqPopup .modal-title::before { left: 50%; transform: translateX(-50%); }
+#sitefloorplan .bd-img.blur { border:0; }
+
+
+@media screen and (min-width: 1150px) and (max-width: 1950px) {
+    .main-navbar .nav-item .ls-is-cached { width:50px !important; }
+    .main-navbar .nav-link {
+        font-size: calc(0.95vw + 1px);
+    }
+}
+@media(max-width:960px){
+    .amenities-block-wrapper p { padding-left:40px; }
+    .enq-form .form-control::placeholder{ font-size:12px; }
+    sidebar .enq-form .form-control { font-size:12px; }
+    .videoPopinBtn { bottom: 60px !important; }
+
+}
